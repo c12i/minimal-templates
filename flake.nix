@@ -45,12 +45,12 @@
 
             packages.hc-scaffold-app-template = inputs.scaffolding.lib.wrapCustomTemplate {
               inherit pkgs system;
-              customTemplatePath.url = path:./templates/app;
+              customTemplatePath.url = ./templates/app;
             };
 
             packages.hc-scaffold-module-template = inputs.scaffolding.lib.wrapCustomTemplate {
               inherit pkgs system;
-              customTemplatePath.url = path:./templates/module;
+              customTemplatePath.url = ./templates/module;
             };
 
           };
